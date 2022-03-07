@@ -1,3 +1,30 @@
 body {
-font-size: 200%;
+    font-size: 200%;
+    background-color: #BADFE7
+}
+header {
+    background-color: #388087
+}
+
+.nature {
+
+}
+
+p1 {
+    padding-top: 250px;
+
+}
+h1 {
+    padding-bottom: 50px;
+}
+ul {
+    font-size: 75%;
+}
+
+p2 {
+    padding-bottom: 150px;
+}
+
+footer {
+    padding-top: 250px;
 }
