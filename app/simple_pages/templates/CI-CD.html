@@ -1,4 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 4
+    <h1>Continuous Integration and Deployment</h1>
+    <h1> How is project set up to use Github Actions? </h1>
+    <p1> Project is set up so that there are tests on pull requests. There is a pytest and a heroku test that go through during a pull request.
+    the workflow files utilize the concept of continues integration and deployment that can be seen on the actions tab in github.
+    Fowler addresses continuous delivery by stating "You achieve continuous delivery by continuously integrating the software
+    done by the development team, building executables and running automated tests"</p1>
+    <h1> How can you review code using a development server before merging pull requests?  </h1>
+    <p1> Pull requests enable a feature in which automated tests can be set up with Github Actions. This can be used find bugs on different branches when comparing them.
+    According to Fowler "I take my working copy and do whatever I need to do to complete my task. This will consist of both altering the production code and also adding or changing automated tests. Continuous
+    Integration assumes a high degree of tests which are automated into the software"</p1>
+    <h1> How can you deploy master to a production server?  </h1>
+    <p1> To deploy to master to a production server. You have to first push changes to the branch that is being worked on.
+    Then it will have to pass any tests. Assuming tests are past then it can be merged into the production server. This can be done
+    with using a key that gives access to the server in you code. </p1>
+    <h1> How to deploy an image of your project to Dockerhub when master is updated.   </h1>
+    <p1> Once a repository is created on DockerHub. You can push a new image to the repository either by integrating your Github account. Or through command line pushing a tag with the image.</p1>
 {% endblock %}
