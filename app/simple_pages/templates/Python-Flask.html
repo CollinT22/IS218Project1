@@ -1,4 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-    Python and Flask
+   <h1> Python and Flask </h1>
+    <h1> Testing with Python and Flask </h1>
+    <p1>Pytest lets you write code to test if your existing code is working. It is done by writing testing code
+    that checks whether or not your code is producing the correct output through assertations. </p1>
+    <h1> Test Example </h1>
+    <p1>def test_request_index(client): <br>
+    """This makes the index page"""<br>
+    response = client.get("/")<br>
+    assert response.status_code == 200<br>
+    assert b"Index Page" in response.data<br></p1>
+    <h1> Pytest examples </h1>
+    <p1>Pytest examples in simple pages offer assertations to see if the pages are there in the file structure. The project on Github
+    can be found <a href="https://github.com/CollinT22/IS218Project1">here</a></p1>
 {% endblock %}
+<h1> Outline </h1>
+<ul> Project 1
+    <li> workflows</li>
+    <ul>dev.yml -> used for establishing the dev heroku branch.</ul>
+    <ul>prod.yml -> used for establishing the production heroku branch.</ul>
+
+</ul>

@@ -1,5 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>Docker</h1>
-    <p1> What is a Docker Container? </p1>
+    <h1> What is a Docker Container? </h1>
+    <p1>A container is essentially a virtualized application that is created from a Docker Image. Docker containers can be
+    adjusted and changed. It provides an isolated environment on where to work on an application.</p1>
+    <h1> What is a Docker Image? </h1>
+    <p1>An image is a static template that containers can be built off of. Image is a snapshot of a container and is created
+    with the build command.</p1>
+    <h1> Project on DockerHub <a href="https://hub.docker.com/repository/docker/collint22/ct359-project1">Repo</a> </h1>
+    <ul> Useful Docker Commands
+    <li> Kill Image: docker kill imagename</li>
+    <li> To Force Something: Use -f</li>
+    <li> Remove Image: docker rmi imagepath -f</li>
+        <li> Run Docker On a Port 80:80 : docker run -p 80:80 </li>
+    <li> Building Docker Container: docker compose up --build</li>
+    </ul>
+
+        <h1> Building a Docker Project </h1>
+    <p1> First create a DockerFile then use the command "docker build -t filename" . Then start the container with "docker run  port:port filename"
+    </p1>
+
 {% endblock %}
