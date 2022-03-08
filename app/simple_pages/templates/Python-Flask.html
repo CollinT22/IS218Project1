@@ -13,11 +13,45 @@
     <h1> Pytest examples </h1>
     <p1>Pytest examples in simple pages offer assertations to see if the pages are there in the file structure. The project on Github
     can be found <a href="https://github.com/CollinT22/IS218Project1">here</a></p1>
-{% endblock %}
-<h1> Outline </h1>
+
+
+    <h1> Outline </h1>
 <ul> Project 1
-    <li> workflows</li>
-    <ul>dev.yml -> used for establishing the dev heroku branch.</ul>
-    <ul>prod.yml -> used for establishing the production heroku branch.</ul>
+    <ul> .github workflows
+    <ul>dev.yml -> used for establishing the dev heroku branch. Used for local development</ul>
+    <ul>prod.yml -> used for establishing the production heroku branch. Used for local dev</ul>
+    </ul>
+    <ul> .pytest cache -> Stores results of pytest.</ul>
+    <ul> context processors -> sets up footnote on the webpage</ul>
+    <ul> simple pages
+        <ul> templates -> the html pages for the website </ul>
+        <ul> dunder init -> if a webpage is not found return and error</ul>
+    </ul>
+    <ul>static
+        <ul> css -> css file for the website. </ul>
+        <ul> images -> Images folder for all the images for the website. </ul>
+        <ul> js -> js scripts that can be used by the website </ul>
+    </ul>
+    <ul>templates -> has a base html file which other html files extend </ul>
+    <ul> calculator -> has a dunder init for the calculator project that isn't involved in this project</ul>
+    <ul> tests:
+        <ul> calculator test -> tests the calculator functions </ul>
+        <ul> conftest ->test the configurations of the website ensures http is created and the application is made. </ul>
+        <ul> context_process_test -> sees if the footnote is correct. </ul>
+        <ul> simple_pages_test -> makes sure that the webpages are there and index is working. </ul>
+    </ul>
+    <ul> venv -> executables for packages </ul>
+    <ul> docker-compose -> sets up configurations for the docker file you create and start services from the configuration </ul>
+    <ul> Dockerfile-> Commands that can be called to create docker image </ul>
+    <ul> heroku.yml -> builds docker file on heroku </ul>
+    <ul> pytest.ini -> configures pytest </ul>
+    <ul> readme.md -> file important to read in order to understand project </ul>
+    <ul> requirements.txt -> python libraries for the project </ul>
+    <ul> setup.py -> set up and import for calculator </ul>
+
+
 
 </ul>
+
+
+{% endblock %}
